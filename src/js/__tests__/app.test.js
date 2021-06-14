@@ -26,9 +26,9 @@ describe('GamePlay:', () => {
     expect(game.holes[3].classList.contains('hole_has-goblin')).toBeFalsy();
   });
 
-  test('getPosition method should return random number', () => {
+  test('getRandomIndex method should return random number', () => {
     const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
-    const random = new GamePlay().getPosition();
+    const random = new GamePlay().getRandomIndex();
     expect(array).toContain(random);
   });
 });
